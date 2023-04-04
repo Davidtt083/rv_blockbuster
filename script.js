@@ -13,3 +13,15 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+var boton = document.getElementById('miBoton');
+var audio = document.getElementById('miAudio');
+
+boton.addEventListener('click', function() {
+  audio.play();
+});
+
+var objeto2 = document.getElementById('objeto2');
+
+objeto2.setAttribute('camera-controls', '');
+objeto2.setAttribute('ar', '');
